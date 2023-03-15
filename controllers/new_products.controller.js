@@ -1,0 +1,1 @@
+/* los controladores trabajan en la interaccion entre el html y el js, tiene la estructura de los datos que serán almacenados en el servidor */

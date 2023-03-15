@@ -17,10 +17,13 @@
     "name": "typicode"
   },
 
-  "perfil": [
+  "product": [
     {
-      "nombre": "Lizbeth Grisales Castro",
-      "email": "lizgricas@gmail.com",
+      "name": "consola",
+      "price": 6.00,
+      "image": "",
+      "category": "",
+      "description": "",
       "id": 1
     }
   ]
