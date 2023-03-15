@@ -58,7 +58,7 @@
         <p class="hero__subtitle">
           Productos seleccionados con 33% de descuento
         </p>
-        <a href="./components/product.html" class="hero__link">Ver Consolas</a>
+        <a href="#console" class="hero__link">Ver Consolas</a>
       </div>
     </section>
     <!-- Finish Banner -->
@@ -139,7 +139,7 @@
           </article>
 
           <article class="products__category">
-            <div class="category__header">
+            <div class="category__header" id="console">
               <h2 class="category__title">Consolas</h2>
               <a href="./components/products.html" class="category__link">
                 <span class="category__link-text">Ver Todo</span>
@@ -311,6 +311,7 @@
                       id="nombre"
                       type="text"
                       placeholder="Nombre completo"
+                      data-name
                       />
                   </div>
                   <div class="form__field">
@@ -322,9 +323,11 @@
                       cols="30"
                       rows="4"
                       placeholder="Escribe tu mensaje"
+                      data-message
                       ></textarea>
                   </div>
-                  <a href="#" class="form__btn">Enviar Mensaje</a>
+                  <p class="mns-incorrect">Rellena todos los campos correctamente</p>
+                  <a href="#" class="form__btn" data-submit>Enviar Mensaje</a>
                 </form>
             </div>
         </section>
@@ -333,6 +336,7 @@
     </footer>
     <!-- Finish Footer -->
     <!-- Init Scripts -->
+    <script src="./src/js/validation_form.js"></script>
     <script src="app.js" type="module"></script>
   </body>
 </html>

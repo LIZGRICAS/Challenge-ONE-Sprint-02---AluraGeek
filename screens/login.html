@@ -29,7 +29,7 @@
       <!-- Init menu -->
       <nav class="container">
         <div class="head__menu">
-          <a href="#" class="head__logo-alura">
+          <a href="../index.html" class="head__logo-alura">
             <img src="../src/img/Logo.png" alt="Logo Alura Geek" />
           </a>
           <form class="head__search-input head__search-input-none">
@@ -57,6 +57,9 @@
                 id="nombre"
                 type="text"
                 placeholder="Escriba su correo electrónico"
+                required
+                maxlength="40"
+                data-email
                 />
             </div>
             <div class="main__field">
@@ -67,9 +70,12 @@
                 cols="30"
                 rows="1"
                 placeholder="Escriba su contraseña"
+                required
+                maxlength="40"
+                data-password
                 ></textarea>
             </div>
-            <a href="#" class="main__btn">Entrar</a>
+            <a href="#" class="main__btn" data-login>Entrar</a>
           </form>      
     </main>
     <!-- finish Login -->
@@ -99,6 +105,9 @@
                       id="nombre"
                       type="text"
                       placeholder="Nombre completo"
+                      required
+                      maxlength="40"
+                      data-name
                       />
                   </div>
                   <div class="form__field">
@@ -110,9 +119,13 @@
                       cols="30"
                       rows="4"
                       placeholder="Escribe tu mensaje."
+                      required
+                      maxlength="120"
+                      data-message
                       ></textarea>
                   </div>
-                  <a href="#" class="form__btn">Enviar Mensaje</a>
+                  <p class="mns-incorrect">Rellena  todos los campos correctamente</p>
+                  <a href="#" class="form__btn" data-submit>Enviar Mensaje</a>
                 </form>
             </div>
         </section>
@@ -121,6 +134,7 @@
     </footer>
     <!-- Finish Footer -->
     <!-- Init Scripts -->
+    <script src="../src/js/validation_form.js"></script>
     <script src="app.js" type="module"></script>
   </body>
 </html>

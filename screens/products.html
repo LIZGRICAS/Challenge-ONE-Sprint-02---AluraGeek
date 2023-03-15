@@ -272,6 +272,9 @@
                       id="nombre"
                       type="text"
                       placeholder="Nombre completo"
+                      required
+                      maxlength="40"
+                      data-name
                       />
                   </div>
                   <div class="form__field">
@@ -283,9 +286,13 @@
                       cols="30"
                       rows="4"
                       placeholder="Escribe tu mensaje."
+                      required
+                      maxlength="120"
+                      data-message
                       ></textarea>
                   </div>
-                  <a href="#" class="form__btn">Enviar Mensaje</a>
+                  <p class="mns-incorrect">Rellena  todos los campos correctamente</p>
+                  <a href="#" class="form__btn" data-submit>Enviar Mensaje</a>
                 </form>
             </div>
         </section>
@@ -294,6 +301,7 @@
     </footer>
     <!-- Finish Footer -->
     <!-- Init Scripts -->
+    <script src="../src/js/validation_form.js"></script>
     <script src="app.js" type="module"></script>
   </body>
 </html>
