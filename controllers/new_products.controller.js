@@ -29,12 +29,36 @@ const newProduct = (imageUrl, name, price, id) => {
     /* ingresamos al método delete creado en el módulo productservices */
     iconDelete.addEventListener("click", () => {
       const id = iconDelete.id;
-      productsServices
-        .deleteProduct(id)
-        .then((respuesta) => {
-          console.log(respuesta);
-        })
-        .catch((err) => consolelog("Ocurrió un error"));
+      Swal.fire({
+        title: "Estas seguro?",
+        text: `Estás seguro de eliminar el producto ${name}? Esta acción es irreversible!`,
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, eliminarlo!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          productsServices
+            .deleteProduct(id)
+            .then((respuesta) => {
+              console.log(respuesta);
+            })
+            .catch((error) => alert("Ocurrio un error al momento de eliminar"));
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "El producto ha sido eliminado",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          setTimeout(function () {
+            const clearContent = ``;
+            products.innerHTML = clearContent;
+            showProducts();
+          }, 1700);
+        }
+      });
     });
   
   return card;
