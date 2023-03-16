@@ -1,61 +1,25 @@
-/* recibe la respuesta del controlador y la genera en un json; realiza la comunicacion con el servidor */
+const listClients = () =>
+fetch('http://localhost:3000/client').then((response) => response.json()).catch((err) => console.log(err));
 
-const listProducts = () =>
-    fetch('http://localhost:3000/products').then((respuesta) => respuesta.json());
 
-    /* los Fetch API, nos permiten conectarnos con el servidor, optener y enviar informacion */
+const createClient = ( email, message) => {
+return fetch("http://localhost:3000/client", {
+    /* POST crear nuevo recurso, si no se especifica por default se implementa el metodo GET */
+    method: "POST",
+    headers: {
+    "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+    email,
+    message,
+    id: uuid.v4(), /* se implementa función del script importado de la pàg uuid para generar un id único automáticamente */
+    }),
+});
+}
+      
 
-    const createProduct = (name, price, image, category, description, id) => {
-        return fetch("http://localhost:3000/products", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            price,
-            image,
-            category,
-            description,
-            id,
-          }),
-        });
-      };
-      
-      const deleteProduct = (id) => {
-        return fetch(`http://localhost:3000/products/${id}`, {
-          method: "DELETE",
-        });
-      };
-      
-      const detailProduct = async (id) => {
-        return fetch(`http://localhost:3000/products/${id}`).then((resp) =>
-          resp.json()
-        );
-      };
-      
-      const updateProduct = (name, price, image, id, category, description) => {
-        return fetch(`http://localhost:3000/products/${id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            price,
-            image,
-            category,
-            description,
-          }),
-        })
-          .then((resp) => resp)
-          .catch((err) => console.log(err));
-      };
-      
+/* se exportan los módulos creados */
       export const clientServices = {
-        listProducts,
-        createProduct,
-        deleteProduct,
-        detailProduct,
-        updateProduct,
+        listClients,
+        createClient
       };

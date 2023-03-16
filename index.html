@@ -41,7 +41,7 @@
           </form>
         </div>
         <div class="head__login">
-          <a href="./components/login.html" class="head__login-link">Login</a>
+          <a href="./screens/login.html" class="head__login-link">Login</a>
         </div>
         <div class="head__search-icon">
           <a href="#" class="head__search-link">
@@ -64,12 +64,12 @@
     <!-- Finish Banner -->
     <main>
       <!-- Init Products -->
-      <section class="products">
+      <section class="products" >
         <div class="container">
-          <article class="products__category">
+          <article class="products__category" data-product>
             <div class="category__header">
               <h2 class="category__title">Star Wars</h2>
-              <a href="./components/products.html" class="category__link">
+              <a href="./screens/products.html" class="category__link">
                 <span class="category__link-text">Ver Todo</span>
                 <i class="fa-solid fa-arrow-right category__link-icon"></i>
               </a>
@@ -83,7 +83,7 @@
                 />
                 <h3 class="card__title">Producto XYZ</h3>
                 <p class="card__price">$ 60,00</p>
-                <a href="./components/product.html" class="card__link">Ver Producto</a>
+                <a href="./screens/product.html" class="card__link">Ver Producto</a>
               </div>
               <div class="category__card">
                 <img
@@ -336,8 +336,10 @@
     </footer>
     <!-- Finish Footer -->
     <!-- Init Scripts -->
+    <!-- scripts para asignar un id previamente creados funcion uuid.v4()-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./src/js/validation_form.js"></script>
     <script src="app.js" type="module"></script>
-    <!-- type module para poder trabajar con los impotrts y exports -->
+    <!-- type module para poder trabajar con los imports y exports -->
   </body>
 </html>

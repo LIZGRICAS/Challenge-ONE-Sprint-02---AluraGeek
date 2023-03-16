@@ -84,7 +84,42 @@ main {
     border: solid thin var(--color-blue-100);
     background-color:var(--color-white);
     color: var(--color-blue-100);
-    
+  }
+
+  .card_id-delete {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: rgba(62, 161, 219, 1);
+  }
+  
+  .completeIcon {
+    color: rgba(62, 161, 219, 1);
+  }
+  
+  .trashIcon:hover {
+    color: #f00;
+  }
+  
+  .deleteConfirmationPop {
+    position: relative;
+    background-color: rgba(255, 255, 255);
+    z-index: 99;
+    width: 100%;
+    top: -100px;
+    left: 0;
+  }
+  .deleteSpace {
+    position: relative;
+    width: 30%;
   }
 
 @media screen and (max-width: 768px) {

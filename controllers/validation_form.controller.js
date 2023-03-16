@@ -1,3 +1,6 @@
+export {clientServices} from "../service/client-service.js";
+/* se importan los módulos creados */
+
 const btnSubmit = document.querySelector('[data-submit]');
 const inputName = document.querySelector('[data-name]');
 const inputMessage = document.querySelector('[data-message]');
@@ -16,6 +19,7 @@ El evento-metodo blur () se usa para quitar el foco de un elemento. y se ejecuta
 inputMessage.addEventListener('blur', inputValidateMessage);
 
 btnSubmit.addEventListener('click', (e) => {
+  /* método preventDefault indica que el elemento (en este caso el btnSubmit) no funcione como deberia */
   e.preventDefault();
 /* preventDefault() método cancela el evento si es cancelable, lo que significa que la acción predeterminada que pertenece al evento no ocurrirá. */
   setTimeout(() => {
