@@ -1,14 +1,17 @@
 const user = "correo@alura.com";
 const password = "alura123";
 
+/* Init Pop-up ventana emergente */
+
 window.onload = function() {
   Swal.fire({
     title: "¡Datos de prueba!",
     text: `utiliza el email: correo@alura.com  y la clave: alura123 para ingresar al modulo de administrador`,
     position: "center",
     icon: 'warning'
-  })()
+  })
 }
+/* Finish Pop-up ventana emergente */
 
 const inputEmailLogin = document.querySelector("[data-email-login]");
 

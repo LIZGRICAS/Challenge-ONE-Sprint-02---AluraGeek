@@ -17,8 +17,10 @@ const modelProduct = (imageUrl, name, price, id) => {
         />
         <h3 class="card__title">${name}</h3>
         <p class="card__price">$ ${price}</p>
+        <div>
+        <h3 class="card__title">Ref: ${id}</h3>
+        </div>
         <div class="card_id-delete">
-        <h3 class="card__title">Ref:${id}</h3>
         <i class="fa fa-pencil-square-o editicon icon" aria-hidden="true"></i>
         <i class="fas fa-trash-alt trashIcon icon" data-delete id="${id}"></i>
         </div>      
