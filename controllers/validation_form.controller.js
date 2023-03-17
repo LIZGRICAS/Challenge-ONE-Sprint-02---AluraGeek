@@ -12,7 +12,6 @@ message.style.display = 'none';
 
 btnSubmit.disabled = true;
 /* el metodo disabled, permite que estén inactivos o deshabilitados de modo que el usuario no podrá pulsar sobre ellos o elegirlos. */
-btnSubmit.style.opacity = 0.6;
 
 inputEmail.addEventListener('blur', inputValidateEmail);
 /* addEventlistener, es un escuchador que indica al navegador que este atento a la interacción del usuario.target.addEventListener('tipo de evento',función_a_lanzar,booleano);

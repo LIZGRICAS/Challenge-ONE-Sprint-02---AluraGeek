@@ -6,7 +6,7 @@ const listProducts = () =>
     /* los Fetch API, nos permiten conectarnos con el servidor, optener y enviar informacion; siempre necesita de un parametro que es en este caso La URL */
 /* cuando no se define el metodo por default se implementa el metodo GET implicitamente */
     
-const createProduct = (imageURL, name, price) => { /* no se recibe el id como parametro, sino que se genera automaticamente */
+const createProduct = (imageUrl, name, price, description) => { /* no se recibe el id como parametro, sino que se genera automaticamente */
 return fetch("http://localhost:3000/products", {
     /* POST crear nuevo recurso */
     method: "POST",
@@ -16,9 +16,10 @@ return fetch("http://localhost:3000/products", {
     },
     /* esta estructura debe coincidir con la registrada en el simulador del API (db.json) */
     body: JSON.stringify({
-    imageURL,
+    imageUrl,
     name,
     price,
+    description,
     id: uuid.v4(), /* se implementa función del script importado de la pàg uuid para generar un id único automáticamente */
     }),
 });
@@ -38,16 +39,17 @@ fetch(`http://localhost:3000/products/${id}`).then((resp) =>
 };
 
 /* modificar producto */
-const updateProduct = (imageURL, name, price) => {
+const updateProduct = (imageUrl, name, price, description) => {
 fetch(`http://localhost:3000/products/${id}`, {
     method: "PUT",
     headers: {
     "Content-Type": "application/json",
     },
     body: JSON.stringify({
-    imageURL,
+    imageUrl,
     name,
     price,
+    description,
     id: uuid.v4(), /* se implementa función del script importado de la pàg uuid para generar un id único automáticamente */
     }),
 })

@@ -18,7 +18,6 @@
     ></script>
     <!--Styles  -->
     <link rel="stylesheet" href="../src/css/bases.css" />
-    <link rel="stylesheet" href="../src/css/reset.css" />
     <link rel="stylesheet" href="../src/css/head.css" />
     <link rel="stylesheet" href="../src/css/new_product.css" />
     <link rel="stylesheet" href="../src/css/footer.css" />
@@ -40,7 +39,7 @@
           </form>
         </div>
         <div class="head__login">
-          <a href="./components/login.html" class="head__login-link">Menú Administrador</a>
+          <a href="./page_error.html" class="head__login-link">Menú Administrador</a>
         </div>
         <div class="head__search-icon">
           <a href="#" class="head__search-link">
@@ -58,8 +57,10 @@
             <input
             class="main__input"
             id="nombre"
-            type="text"
+            type="url"
             placeholder="URL de imagen"
+            required
+            data-imgUrl
             />
         </div>
         <div class="main__field">
@@ -68,6 +69,8 @@
           id="nombre"
           type="text"
           placeholder="Categoría"
+          required
+          data-category
           />
         </div>
         <div class="main__field">
@@ -76,28 +79,34 @@
           id="nombre"
           type="text"
           placeholder="Nombre del producto"
+          required
+          data-name
           />
         </div>
         <div class="main__field">
           <input
           class="main__input"
           id="nombre"
-          type="text"
+          type="number"
+          step="any"
           placeholder="Precio del producto"
+          required
+          data-price
           />
         </div>
-        <div class="main__field">
-            
-            <textarea
-            class="main__input"
-            name="message"
-            id="message"
-            cols="30"
-            rows="3"
-            placeholder="Descripción del producto"
-            ></textarea>
+        <div class="main__field">  
+          <textarea
+          class="main__input"
+          name="message"
+          id="message"
+          cols="30"
+          rows="3"
+          placeholder="Descripción del producto"
+          required
+          data-description
+          ></textarea>
         </div>
-        <a href="#" class="main__btn" data-form-btn >Agregar producto</a>
+        <a href="#" class="main__btn" type="submit" data-btn-add>Agregar producto</a>
       </form>
      </main>        
     <!-- finish Agregar producto -->
@@ -146,8 +155,8 @@
                         data-message
                         ></textarea>
                     </div>
-                    <p class="mns-incorrect">Rellena  todos los campos correctamente</p>
-                    <a href="#" class="form__btn" data-submit type="submit" >Enviar Mensaje</a>
+                    <p class="mns-incorrect">Rellena  todos los campos correctamente</p>                 
+                    <a href="#" class="form__btn" data-submit >Enviar Mensaje</a>
                   </form>
                 </div>
           </section>
@@ -157,10 +166,11 @@
       <!-- Finish Footer -->
     <!-- Finish Footer -->
     <!-- Init Scripts -->
-    <script src="../controllers/new_products.controller.js" type="module"></script>
+    <script src="../controllers/new_product.controller.js" type="module"></script>
     <script src="../controllers/validation_form.controller.js" type="module"></script>
     <!-- type module para poder trabajar con los imports y exports -->
     <!-- scripts para asignar un id previamente creados -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

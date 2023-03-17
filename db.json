@@ -3,116 +3,110 @@
     {
       "imageUrl": "https://i.ibb.co/3FbG5bj/unsplash-1-VV1-MRafd7-A.png",
       "name": "Producto XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111111
     },
     {
       "imageUrl": "https://i.ibb.co/9ZqkTJm/unsplash-6-FDXGY9-J6y4.png",
       "name": "Producto XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111112
     },
     {
       "imageUrl": "https://i.ibb.co/C290L1Q/unsplash-ep-RFE-h-BNjo.png",
       "name": "Producto XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111113
     },
     {
       "imageUrl": "https://i.ibb.co/pnn07Rq/unsplash-Ke-GTo-DVN0l4.png",
       "name": "Producto XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111114
     },
     {
       "imageUrl": "https://i.ibb.co/SQZZ9qS/unsplash-R8-L1l9-RN198.png",
       "name": "Producto XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111115
     },
     {
       "imageUrl": "https://i.ibb.co/J5DL6Gv/unsplash-4-OHk-K555s1-A.png",
       "name": "Producto XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111116
     },
     {
       "imageUrl": "https://i.ibb.co/r3Y27NR/unsplash-0-POw-K6i-Ai-RQ.png",
       "name": "Consola XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111117
     },
     {
       "imageUrl": "https://i.ibb.co/3zYH1F1/unsplash-ca-Nzzoxls8-Q.png",
       "name": "Consola XY",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111118
     },
     {
       "imageUrl": "https://i.ibb.co/sRsTPgC/unsplash-k-x-Yh-I3-g-JM.png",
       "name": "Consola XY",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111119
     },
     {
       "imageUrl": "https://i.ibb.co/n34VVHs/unsplash-wa5z9o9fgjw.png",
       "name": "Consola XY",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111110
     },
     {
       "imageUrl": "https://i.ibb.co/jT99k40/unsplash-Zjn4d-T993-g.png",
       "name": "Consola X",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111120
     },
     {
       "imageUrl": "https://i.ibb.co/BVHLcLc/unsplash-ZV7lnfy-QLm-A.png",
       "name": "Consola X",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111121
     },
     {
       "imageUrl": "https://i.ibb.co/y6sYBw1/unsplash-b-Uga-Ia-Zys-H0.png",
       "name": "Control y consola XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111122
     },
     {
       "imageUrl": "https://i.ibb.co/gmCt2QC/unsplash-f-MP-o-Cze3-AY.png",
       "name": "Control y consola XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111123
     },
     {
       "imageUrl": "https://i.ibb.co/5nn5tQZ/unsplash-j-MT6-Brg-Bu-XU.png",
       "name": "Control y consola XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111124
     },
     {
       "imageUrl": "https://i.ibb.co/xYBNN30/unsplash-Mx-Vk-WPi-JALs.png",
       "name": "Control y consola XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111125
     },
     {
       "imageUrl": "https://i.ibb.co/fx28d8T/unsplash-r27um-XAel-Dc.png",
       "name": "Control y consola XYZ",
-      "price": "$ 6,00",
+      "price": 6,
       "id": 1111126
-    },
-    {
-      "imageUrl": "https://i.ibb.co/GWn3rBw/unsplash-s-YVY-ZKwax-U.png",
-      "name": "Control y consola XYZ",
-      "price": "$ 6,00",
-      "id": 1111127
     }
   ],
   "login": [
     {
-      "email": "lizgricas@gmail.com",
-      "password": "Lgc1234",
+      "email": "lizgricas@alura.com",
+      "password": "alura123",
       "id": 1
     }
   ],
@@ -156,6 +150,11 @@
       "email": "lgrisales08@soy.sena.edu.co",
       "mns": "hola ustedes realizan impresiones de productos personalizados?WPS: 3008333775",
       "id": "d8311b9e-c4de-480a-9fb4-af5256378615"
+    },
+    {
+      "email": "lgrisales08@misena.edu.co",
+      "mns": "djddjd",
+      "id": "66254346-b402-4fb6-99fd-dd0854a7a56e"
     }
   ]
 }

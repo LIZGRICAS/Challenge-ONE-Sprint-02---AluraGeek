@@ -5,7 +5,8 @@ import { productsServices } from "../service/products-service.js";
 
 const divProduct = document.querySelector("[data-product]");
 
-const newProduct = (imageUrl, name, price, id) => {
+
+const modelProduct = (imageUrl, name, price, id) => {
   const card = document.createElement("div");
   const content = `
     <div class="category__card none">
@@ -15,7 +16,7 @@ const newProduct = (imageUrl, name, price, id) => {
         class="card__img"
         />
         <h3 class="card__title">${name}</h3>
-        <p class="card__price">${price}</p>
+        <p class="card__price">$ ${price}</p>
         <div class="card_id-delete">
         <h3 class="card__title">Ref:${id}</h3>
         <i class="fa fa-pencil-square-o editicon icon" aria-hidden="true"></i>
@@ -67,10 +68,8 @@ productsServices
 .listProducts()
   .then((data) => {
     data.forEach(({ imageUrl, name, price, id }) => {
-      const newCard = newProduct(imageUrl, name, price, id);
+      const newCard = modelProduct(imageUrl, name, price, id);
       divProduct.appendChild(newCard);
     });
   })
   .catch((error) => alert("Ocurrió un error"));
-
-  

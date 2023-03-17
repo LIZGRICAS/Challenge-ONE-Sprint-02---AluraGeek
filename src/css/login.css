@@ -60,6 +60,10 @@ body {
     border-color: var(--color-blue-100);
   }
 
+  .message-erro {
+    display: ;
+  }
+
   @media screen and (max-width: 768px) {
     .main__form {
         align-items: center;

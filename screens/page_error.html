@@ -18,19 +18,18 @@
     ></script>
     <!--Styles  -->
     <link rel="stylesheet" href="../src/css/bases.css" />
-    <link rel="stylesheet" href="../src/css/reset.css" />
     <link rel="stylesheet" href="../src/css/head.css" />
     <link rel="stylesheet" href="../src/css/login.css" />
     <link rel="stylesheet" href="../src/css/products.css" />
     <link rel="stylesheet" href="../src/css/footer.css" />
     <title>Todos los productos</title>
   </head>
-  <body style="background-color: white;">
+  <body style="background-color:  #fbfbfb;">
     <header class="head">
       <!-- Init menu -->
       <nav class="container">
         <div class="head__menu">
-          <a href="#" class="head__logo-alura">
+          <a href="./new_product.html" class="head__logo-alura">
             <img src="../src/img/Logo.png" alt="Logo Alura Geek" />
           </a>
           <form class="head__search-input head__search-input-none">
@@ -49,7 +48,7 @@
       <!-- Finish menu -->
     </header>
      <!-- Init Login -->
-    <main class="main" style="background-color: white;">
+    <main class="main" >
         <section class="error-container" style="width: 100%;">
             <article class="error-image d-flex justify-content-center" style="width: 100%;">
               <img src="../src/img/fondo-pagina-error-404-distorsion_23-2148090004.jpg" class="" alt="Error 404" />
@@ -114,6 +113,7 @@
     <!-- Init Scripts -->
     <script src="../controllers/validation_form.controller.js" type="module"></script>
     <!-- type module para poder trabajar con los imports y exports -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- scripts para asignar un id previamente creados -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
