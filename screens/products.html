@@ -67,19 +67,6 @@
           </article>
         </div>
       </section>
-      <div class="modal-container modal--close">
-        <article class="modal">
-          <h2 class="modal__title">Eliminar</h2>
-          <button class="modal__close">X</button>
-          <p class="modal__text">¿Deseas continuar?</p>
-          <div class="modal__button-container">
-            <button class="modal__button modal__button--confirm">
-              Eliminar
-            </button>
-            <button class="modal__button">No eliminar</button>
-          </div>
-        </article>
-      </div>
     </main>
     <!-- finish Login -->
     <!-- Init Footer -->
@@ -100,17 +87,17 @@
                         <a href="#" class="contact__link">Anuncie aqui</a>
                     </nav>
                 </div>
-                <form class="contact__form">
+                <form class="contact__form" data-form>
                   <h3 class="form__title">Hable con nosotros</h3>
                   <div class="form__field">
                       <input
                       class="form__input"
-                      id="nombre"
-                      type="text"
-                      placeholder="Nombre completo"
+                      id="email"
+                      type="email"
+                      placeholder="Email"
                       required
                       maxlength="40"
-                      data-name
+                      data-email
                       />
                   </div>
                   <div class="form__field">
@@ -121,14 +108,14 @@
                       id="message"
                       cols="30"
                       rows="4"
-                      placeholder="Escribe tu mensaje."
+                      placeholder="Escribe tu mensaje y datos de contacto"
                       required
                       maxlength="120"
                       data-message
                       ></textarea>
                   </div>
                   <p class="mns-incorrect">Rellena  todos los campos correctamente</p>
-                  <a href="#" class="form__btn" data-submit>Enviar Mensaje</a>
+                  <a href="#" class="form__btn" data-submit type="submit" >Enviar Mensaje</a>
                 </form>
             </div>
         </section>
@@ -138,7 +125,7 @@
     <!-- Finish Footer -->
     <!-- Init Scripts -->
     <script src="../controllers/new_products.controller.js" type="module"></script>
-    <!-- <script src="../controllers/validation_form.controller.js" type="module"></script> -->
+    <<script src="../controllers/validation_form.controller.js" type="module"></script>
     <!-- type module para poder trabajar con los imports y exports -->
     <!-- scripts para asignar un id previamente creados -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

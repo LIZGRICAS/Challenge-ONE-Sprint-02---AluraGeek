@@ -75,17 +75,17 @@
                         <a href="#" class="contact__link">Anuncie aqui</a>
                     </nav>
                 </div>
-                <form class="contact__form">
+                <form class="contact__form" data-form>
                   <h3 class="form__title">Hable con nosotros</h3>
                   <div class="form__field">
                       <input
                       class="form__input"
-                      id="nombre"
-                      type="text"
-                      placeholder="Nombre completo"
+                      id="email"
+                      type="email"
+                      placeholder="Email"
                       required
                       maxlength="40"
-                      data-name
+                      data-email
                       />
                   </div>
                   <div class="form__field">
@@ -96,14 +96,14 @@
                       id="message"
                       cols="30"
                       rows="4"
-                      placeholder="Escribe tu mensaje."
+                      placeholder="Escribe tu mensaje y datos de contacto"
                       required
                       maxlength="120"
                       data-message
                       ></textarea>
                   </div>
                   <p class="mns-incorrect">Rellena  todos los campos correctamente</p>
-                  <a href="#" class="form__btn" data-submit>Enviar Mensaje</a>
+                  <a href="#" class="form__btn" data-submit type="submit" >Enviar Mensaje</a>
                 </form>
             </div>
         </section>

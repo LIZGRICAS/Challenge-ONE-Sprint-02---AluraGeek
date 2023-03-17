@@ -24,7 +24,6 @@ const newProduct = (imageUrl, name, price, id) => {
     </div>`;
 
   card.innerHTML = content;
-  card.dataset.id = id;
   const iconDelete = card.querySelector('[data-delete]')
     /* ingresamos al método delete creado en el módulo productservices */
     iconDelete.addEventListener("click", () => {
@@ -73,3 +72,5 @@ productsServices
     });
   })
   .catch((error) => alert("Ocurrió un error"));
+
+  
