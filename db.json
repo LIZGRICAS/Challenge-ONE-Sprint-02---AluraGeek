@@ -112,7 +112,7 @@
   ],
   "login": [
     {
-      "email": "lizgricas@alura.com",
+      "email": "correo@alura.com",
       "password": "alura123",
       "id": 1
     }
@@ -162,6 +162,11 @@
       "email": "lgrisales08@misena.edu.co",
       "mns": "djddjd",
       "id": "66254346-b402-4fb6-99fd-dd0854a7a56e"
+    },
+    {
+      "email": "lizgricas@gmail.com",
+      "mns": "hola porfa contactarme al 3008333979",
+      "id": "01a48b84-63a5-4b11-b642-9c6518fa1bcd"
     }
   ]
 }

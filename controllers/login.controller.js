@@ -1,9 +1,18 @@
-const user = "lizgricas@alura.com";
+const user = "correo@alura.com";
 const password = "alura123";
 
-const inputEmail = document.querySelector("[data-email]");
+window.onload = function() {
+  Swal.fire({
+    title: "¡Datos de prueba!",
+    text: `utiliza el email: correo@alura.com  y la clave: alura123 para ingresar al modulo de administrador`,
+    position: "center",
+    icon: 'warning'
+  })()
+}
 
-const inputPassword = document.querySelector("[data-password]");
+const inputEmailLogin = document.querySelector("[data-email-login]");
+
+const inputPasswordLogin = document.querySelector("[data-password-login]");
 
 const btnLogin = document.querySelector("[data-login]");
 
@@ -12,12 +21,13 @@ const messageError = document.querySelector(".message-error");
 messageError.style.display = "none";
 
 
-inputEmail.addEventListener("blur", validateInput);
-inputPassword.addEventListener("blur", validatePassword);
+inputEmailLogin.addEventListener("blur", validateInput);
+inputPasswordLogin.addEventListener("blur", validatePassword);
+
 
 btnLogin.addEventListener("click", (e) => {
   e.preventDefault();
-  if (inputEmail.value !== user || inputPassword.value !== password) {
+  if (inputEmailLogin.value !== user || inputPasswordLogin.value !== password) {
     Swal.fire({
         title: "¡Datos incorrectos!",
         text: "valida todos los campos nuevamente",
@@ -32,8 +42,8 @@ btnLogin.addEventListener("click", (e) => {
 });
 
 function validateInput() {
-  if (inputEmail.value.length === 0) {
-    inputEmail.style.border = '2px solid rgb(32, 248, 32)';
+  if (inputEmailLogin.value.length === 0) {
+    inputEmailLogin.style.border = '2px solid rgb(32, 248, 32)';
   }
 
   if (this.type === "email") {
@@ -42,11 +52,11 @@ function validateInput() {
 }
 
 function validatePassword() {
-  if (inputPassword.value.length > 0) {
+  if (inputPasswordLogin.value.length > 0) {
     messageError.style.display = "none";
-    inputPassword.style.border = '2px solid rgb(32, 230, 248)';
+    inputPasswordLogin.style.border = '2px solid rgb(32, 230, 248)';
   } else {
-    inputPassword.style.border = '2px solid rgb(32, 248, 32)';
+    inputPasswordLogin.style.border = '2px solid rgb(32, 248, 32)';
     messageError.style.display = "block";
     messageError.textContent = "Complete los campos";
   }
