@@ -39,7 +39,7 @@ fetch(`http://localhost:3000/products/${id}`).then((resp) =>
 };
 
 /* modificar producto */
-const updateProduct = (imageUrl, name, price, description) => {
+const updateProduct = (imageUrl, name, price, description, id) => {
 fetch(`http://localhost:3000/products/${id}`, {
     method: "PUT",
     headers: {
@@ -50,11 +50,8 @@ fetch(`http://localhost:3000/products/${id}`, {
     name,
     price,
     description,
-    id: uuid.v4(), /* se implementa función del script importado de la pàg uuid para generar un id único automáticamente */
     }),
-})
-    .then((resp) => resp)
-    .catch((err) => console.log(err));
+}).then((resp) => resp).catch((err) => console.log(err));
 };
 
       export const productsServices = {

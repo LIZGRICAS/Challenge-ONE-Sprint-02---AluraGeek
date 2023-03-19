@@ -2,14 +2,14 @@
   "products": [
     {
       "imageUrl": "https://i.ibb.co/3FbG5bj/unsplash-1-VV1-MRafd7-A.png",
-      "name": "Producto XYZ",
-      "price": "60.00",
+      "name": "Producto XYZ ",
+      "price": "60.0",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo provident odit debitis. Necessitatibus sapiente cupiditate minima doloremque culpa veritatis recusandae adipisci a aperiam nesciunt, magni quod labore dolor officiis mollitia!",
       "id": 1111111
     },
     {
       "imageUrl": "https://i.ibb.co/9ZqkTJm/unsplash-6-FDXGY9-J6y4.png",
-      "name": "Producto XYZ",
+      "name": "Producto XYZ ",
       "price": "60.00",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo provident odit debitis. Necessitatibus sapiente cupiditate minima doloremque culpa veritatis recusandae adipisci a aperiam nesciunt, magni quod labore dolor officiis mollitia!",
       "id": 1111112
