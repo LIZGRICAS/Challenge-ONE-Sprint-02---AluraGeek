@@ -27,6 +27,3 @@ const description = document.querySelector("[data-description]").value;
 });
 })
 
-
-
-/* ", */

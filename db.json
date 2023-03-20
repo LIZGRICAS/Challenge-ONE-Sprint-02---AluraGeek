@@ -125,13 +125,6 @@
       "price": "60.00",
       "description": "Control y consola XYZ",
       "id": "1111127"
-    },
-    {
-      "imageUrl": "https://i.ibb.co/BVHLcLc/unsplash-ZV7lnfy-QLm-A.png",
-      "name": "Consola VXS",
-      "price": "6.00",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo provident odit debitis. Necessitatibus sapiente cupiditate minima doloremque culpa veritatis recusandae adipisci a aperiam nesciunt, magni quod labore dolor officiis mollitia!",
-      "id": "fac53f67-2d77-41e5-8a19-7575f645aff9"
     }
   ],
   "login": [

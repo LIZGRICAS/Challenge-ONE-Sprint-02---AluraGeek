@@ -33,9 +33,9 @@ return fetch(`http://localhost:3000/products/${id}`, { /* backticks para inserta
 
 /* buscar producto */
 const detailProduct = async (id) => {
-fetch(`http://localhost:3000/products/${id}`).then((resp) =>
-    resp.json()
-);
+    return fetch(`http://localhost:3000/products/${id}`).then((response) =>
+        response.json()
+).catch((err) => console.log(err));
 };
 
 /* modificar producto */

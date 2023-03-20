@@ -18,10 +18,10 @@
     ></script>
     <!--Styles  -->
     <link rel="stylesheet" href="./src/css/bases.css" />
-    <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/head.css" />
     <link rel="stylesheet" href="./src/css/hero.css" />
     <link rel="stylesheet" href="./src/css/products.css" />
+    <link rel="stylesheet" href="./src/css/product.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <title>Spritn 02 - AluraGeek - Creando tu proprio e-commerce</title>
   </head>
@@ -52,7 +52,7 @@
       <!-- Finish menu -->
     </header>
     <!-- Init Banner -->
-    <section class="hero">
+    <section class="hero" data-hero>
       <div class="container">
         <h2 class="hero__title">Febrero Promocional</h2>
         <p class="hero__subtitle">
@@ -61,224 +61,35 @@
         <a href="#console" class="hero__link">Ver Consolas</a>
       </div>
     </section>
+    <section class="product__star" data-product-description>
+    </section><!-- Seccion Product -->
     <!-- Finish Banner -->
     <main>
       <!-- Init Products -->
-      <section class="products" >
+      <section class="products" data-products-index>
         <div class="container">
-          <article class="products__category" data-product>
+          <article class="products__category" >
             <div class="category__header">
-              <h2 class="category__title">Star Wars</h2>
+              <h2 class="category__title">Star Wars - Diversos - Consola XYZ</h2>
               <a href="./screens/login.html" class="category__link">
                 <span class="category__link-text">Ver Todo</span>
                 <i class="fa-solid fa-arrow-right category__link-icon"></i>
               </a>
             </div>
-            <div class="category__body">
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Star Wars/unsplash_1VV1MRafd7A.png"
-                  alt="Taza star war"
-                  class="card__img"
-                />
-                <h3 class="card__title">Producto XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="./screens/product.html" class="card__link card_id" data-View>Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Star Wars/unsplash_6FDXGY9J6y4.png"
-                  alt="juguete darth vader"
-                  class="card__img"
-                />
-                <h3 class="card__title">Producto XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Star Wars/unsplash_epRFE_hBNjo.png"
-                  alt=" Juguete Yoda"
-                  class="card__img"
-                />
-                <h3 class="card__title">Producto XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Star Wars/unsplash_KeGToDVN0l4.png"
-                  alt="Soldado clone Wars"
-                  class="card__img"
-                />
-                <h3 class="card__title">Producto XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card none">
-                <img
-                  src="./src/img/products/Star Wars/unsplash_R8L1l9RN198.png"
-                  alt="Baby Yoda"
-                  class="card__img"
-                />
-                <h3 class="card__title">Producto XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card none">
-                <img
-                  src="./src/img/products/Star Wars/unsplash_4OHkK555s1A.png"
-                  alt="Ben Solo"
-                  class="card__img"
-                />
-                <h3 class="card__title">Producto XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
+            <div class="category__body" data-products-body>
+              
             </div>
           </article>
-
-          <article class="products__category">
-            <div class="category__header" id="console">
-              <h2 class="category__title">Consolas</h2>
-              <a href="./components/products.html" class="category__link">
-                <span class="category__link-text">Ver Todo</span>
-                <i class="fa-solid fa-arrow-right category__link-icon"></i>
-              </a>
-            </div>
-            <div class="category__body">
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Consolas/unsplash_0POwK6iAiRQ.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Consolas/unsplash_caNzzoxls8Q.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Consolas/unsplash_k-xYhI3-gJM.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Consolas/unsplash_wa5z9o9fgjw.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card none">
-                <img
-                  src="./src/img/products/Consolas/unsplash_Zjn4dT993-g.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card none">
-                <img
-                  src="./src/img/products/Consolas/unsplash_ZV7lnfyQLmA.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-            </div>
-          </article>
-
+        </div>
+      </section>
+      
+      <section class="products" data-product-similar>
+        <div class="container">
           <article class="products__category">
             <div class="category__header">
-              <h2 class="category__title">Diversos</h2>
-              <a href="./components/products.html" class="category__link">
-                <span class="category__link-text">Ver Todo</span>
-                <i class="fa-solid fa-arrow-right category__link-icon"></i>
-              </a>
+              <h2 class="category__title">Productos similares</h2>
             </div>
-            <div class="category__body">
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Diversos/unsplash_bUgaIaZysH0.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Control y consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Diversos/unsplash_fMP-oCze3AY.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Control y consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Diversos/unsplash_jMT6BrgBuXU.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Control y consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link" id="">Ver Producto</a>
-              </div>
-              <div class="category__card">
-                <img
-                  src="./src/img/products/Diversos/unsplash_MxVkWPiJALs.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Control y consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card none">
-                <img
-                  src="./src/img/products/Diversos/unsplash_r27umXAelDc.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Control y consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
-              <div class="category__card none">
-                <img
-                  src="./src/img/products/Diversos/unsplash_sYVY_ZKwaxU.png"
-                  alt=""
-                  class="card__img"
-                />
-                <h3 class="card__title">Control y consola XYZ</h3>
-                <p class="card__price">$ 60,00</p>
-                <a href="#" class="card__link">Ver Producto</a>
-              </div>
+            <div class="category__body" data-product-list>
             </div>
           </article>
         </div>
@@ -336,10 +147,10 @@
     </footer>
     <!-- Finish Footer -->
     <!-- Init Scripts -->
+    <script src="./controllers/product_view.controller.js" type="module"></script>
     <!-- scripts para asignar un id previamente creados funcion uuid.v4()-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./src/js/validation_form.js"></script>
-    <script src="app.js" type="module"></script>
+    <!-- <script src="./controllers/validation_form.controller.js" type="module"></script> -->
     <!-- type module para poder trabajar con los imports y exports -->
   </body>
 </html>

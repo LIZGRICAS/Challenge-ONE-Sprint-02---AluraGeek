@@ -33,7 +33,7 @@ const modelProduct = (imageUrl, name, price, id, description) => {
 
 textDescription.style.display = 'none';
 
-  /* ingresamos al método delete creado en el módulo productservices */
+  /* boton eliminar */
   iconDelete.addEventListener("click", () => {
     const id = iconDelete.id;
     Swal.fire({
@@ -69,7 +69,7 @@ textDescription.style.display = 'none';
   });
   
 
-/* editar producto */
+/* boton editar producto */
 iconEdit.addEventListener("click", () => {
   const id = iconEdit.id;
 
@@ -147,18 +147,17 @@ iconEdit.addEventListener("click", () => {
       },
     }).then((result) => {
       productsServices.updateProduct(result.value.imageUrl, result.value.name, result.value.price, result.value.description, id)
-      Swal.fire(`
-        imageUrl: ${result.value.imageUrl}
-        name: ${result.value.name}
-        price: ${result.value.price}
-        description: ${result.value.description}
-      `.trim())
+      Swal.fire ({
+        title: "¡Actualización exitosa!",
+        icon: "success",
+        showConfirmButton: false,
+        timer: 1500,  
+      });
     })
 })
 
   return card;
 };
-
 
 
 productsServices

@@ -5,12 +5,7 @@ main {
 
 .product__star {
     margin: 0;
-    padding: 0px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
+    padding: 50px;
 }
 
 .product__star > .container_star {
@@ -34,7 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 50px;
     gap: 8px;
     }
 
@@ -50,6 +45,12 @@ main {
     font-size: 16px;
     line-height: 19px;
   }
+
+  .container_star {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
   @media screen and (min-width: 768px) { 
     .product__title {
