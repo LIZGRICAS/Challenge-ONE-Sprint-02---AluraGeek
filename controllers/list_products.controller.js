@@ -59,13 +59,12 @@ textDescription.style.display = 'none';
           showConfirmButton: false,
           timer: 1500,
         });
-        setTimeout(function () {
-          const clearContent = ``;
-          products.innerHTML = clearContent;
-          showProducts();
-        }, 1700);
       }
-    });
+    }).then(function(){
+      location.reload();
+      });
+
+    return respuesta
   });
   
 
@@ -154,7 +153,10 @@ iconEdit.addEventListener("click", () => {
         timer: 1500,  
       });
     })
-})
+    
+}).then(function(){
+  location.reload();
+  });
 
   return card;
 };
