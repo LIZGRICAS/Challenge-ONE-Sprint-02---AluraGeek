@@ -10,7 +10,7 @@ const listSimilarProduct = document.querySelector("[data-product-list]");
 sectionDescriptionProduct.style.display = 'none';
 sectionSimilarProduct.style.display = 'none';
 
-
+/* Creación de modelo de los productos ofertados en página de inicio */
  const modelProducts = (imageUrl, name, price, id, description) => {
     const card = document.createElement("div");
     const content = `
@@ -36,16 +36,27 @@ sectionSimilarProduct.style.display = 'none';
   
     textDescription.style.display = 'none';
 
+/* Init evento click en producto en página de inicio */
     iconView.addEventListener("click", (e) => {
             e.preventDefault();
+
+            /* esta iteración se ejecuta solo si es un click generado en uno de los productos similares, ofertados en la página de descripción del producto creada en las siguientes líneas */
+            const divProductDescrip = document.querySelector("[data-product-description"); 
+          
+            while (divProductDescrip.firstChild) {
+              divProductDescrip.removeChild(divProductDescrip.firstChild);
+              break;
+            }
+
+          /* Init Creación de Card para descripción del producto */
             
             const id = card.querySelector("[data-id]").id;   
             console.log("Se ha clickeado el id "+id);
 
+            /* conexión con API para traer los datos */
             productsServices.detailProduct(id).then((response) => {
 
-                console.log(response)
-                    
+                console.log(response)                    
 
                         const imageUrl = response.imageUrl;
                         const name = response.name;
@@ -81,30 +92,32 @@ sectionSimilarProduct.style.display = 'none';
                         sectionDescriptionProduct.style.display = 'block';
                         sectionSimilarProduct.style.display = 'block';
 
-                        
-                    const divProductDescrip = document.querySelector("[data-product-description"); 
 
                     console.log (divProductDescrip)
                         
                     divProductDescrip.appendChild(cardProduct); 
 
-                    productsServices
-                    .listProducts()
-                    .then((data) => {
-                        data.forEach(({ imageUrl, name, price, id, description }) => {
-                        const newCards = modelProducts(imageUrl, name, price, id, description);
-                        listSimilarProduct.appendChild(newCards); 
-                        });
-                    })
-                    .catch((error) => alert("Ocurrió un error"));
-
-                  }).catch((err) => console.log(err));
-                   
+                  }).catch((err) => console.log(err))
+                /* Finish Creación de Card para descripción del producto */
+                /* conexión con la API para traer la lista de los productos similares ofertados en página de descripción */
+                  
+                  productsServices
+                  .listProducts()
+                  .then((data) => {
+                      data.forEach(({ imageUrl, name, price, id, description }) => {
+                      const newCards = modelProducts(imageUrl, name, price, id, description);
+                      listSimilarProduct.appendChild(newCards); 
+                      });                    
+                  }).catch((error) => alert("Ocurrió un error"));
+                
         })
+/* Finish evento click en producto */
+        
     return card;
+
   }
-
-
+  
+/* conexión con la API para traer la lista de loss datos de los productos ofertados en la página de Inicio*/
   productsServices
       .listProducts()
       .then((data) => {
@@ -115,15 +128,3 @@ sectionSimilarProduct.style.display = 'none';
       })
       .catch((error) => alert("Ocurrió un error"));
   
-
-/* const productSimilar = document.querySelector("[data-product-list]")
-
-productsServices
-    .listProducts()
-    .then((data) => {
-        data.forEach(({ imageUrl, name, price, id, description }) => {
-        const newCards = modelProducts(imageUrl, name, price, id, description);
-        productSimilar.appendChild(newCards);
-        });
-    })
-    .catch((error) => alert("Ocurrió un error")); */
