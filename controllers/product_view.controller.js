@@ -1,7 +1,6 @@
 import { productsServices } from "../service/products-service.js";
 
 const divhero = document.querySelector("[data-hero]");
-const containerProducts = document.querySelector("[data-products-index]");
 const divProducts = document.querySelector("[data-products-body]");
 const sectionDescriptionProduct = document.querySelector("[data-product-description]");
 const tittleCategoryProducts = document.querySelector("[data-tittle-category]");
@@ -9,6 +8,11 @@ const tittleSimilarProducts = document.querySelector("[data-tittle-similar-produ
 
 sectionDescriptionProduct.style.display = 'none';
 tittleSimilarProducts.style.display = 'none';
+
+document.addEventListener("DOMContentLoaded", function() {
+  const firstElement = document.querySelector(".first-element");
+  firstElement.scrollIntoView();
+});
 
 /* Creación de modelo de los productos ofertados en página de inicio */
  const modelProducts = (imageUrl, name, price, id, description) => {
@@ -40,6 +44,8 @@ tittleSimilarProducts.style.display = 'none';
     iconView.addEventListener("click", (e) => {
             e.preventDefault();
 
+            const firstElement = document.querySelector(".first-element");
+            firstElement.scrollIntoView();
             /* esta iteración se ejecuta solo si es un click generado en uno de los productos similares, ofertados en la página de descripción del producto creada en las siguientes líneas */
             const divProductDescrip = document.querySelector("[data-product-description"); 
           
