@@ -14,7 +14,7 @@ sectionSimilarProduct.style.display = 'none';
  const modelProducts = (imageUrl, name, price, id, description) => {
     const card = document.createElement("div");
     const content = `
-      <div class="category__card none">
+      <div class="category__card ">
           <img
           src="${imageUrl}"
           alt="Imagen Product"
@@ -82,15 +82,16 @@ sectionSimilarProduct.style.display = 'none';
                                     <h3 class="card__title"><strong>Ref:</strong> ${id}</h3>
                             </div>      
                         </div>`;
-                    
+
+                        cardProduct.style.width = '100%';
                         cardProduct.innerHTML = contentProduct;
 
                         console.log (cardProduct) 
 
                         divhero.style.display = 'none';
                         containerProducts.style.display = 'none';
-                        sectionDescriptionProduct.style.display = 'block';
-                        sectionSimilarProduct.style.display = 'block';
+                        sectionDescriptionProduct.style.display = 'flex';
+                        sectionSimilarProduct.style.display = 'flex';
 
 
                     console.log (divProductDescrip)

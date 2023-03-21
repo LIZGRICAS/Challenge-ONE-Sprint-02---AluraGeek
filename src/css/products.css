@@ -121,7 +121,7 @@
 
 @media screen and (max-width: 768px) {
     .category__header {
-        gap: 491px;
+        gap: 91px;
     }
 
     .products__header {
@@ -146,7 +146,7 @@
         margin-bottom: 20px;
     }
     .category__header {
-    gap: 10%;
+    gap: 2%;
     }
 
     .products__header {

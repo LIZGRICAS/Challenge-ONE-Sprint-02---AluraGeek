@@ -8,7 +8,7 @@ const divProduct = document.querySelector("[data-product]");
 const modelProduct = (imageUrl, name, price, id, description) => {
   const card = document.createElement("div");
   const content = `
-    <div class="category__card none">
+    <div class="category__card ">
         <img
         src="${imageUrl}"
         alt="Imagen Product"
