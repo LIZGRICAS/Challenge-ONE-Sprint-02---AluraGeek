@@ -4,11 +4,11 @@ const divhero = document.querySelector("[data-hero]");
 const containerProducts = document.querySelector("[data-products-index]");
 const divProducts = document.querySelector("[data-products-body]");
 const sectionDescriptionProduct = document.querySelector("[data-product-description]");
-const sectionSimilarProduct = document.querySelector("[data-product-similar]");
-const listSimilarProduct = document.querySelector("[data-product-list]");
+const tittleCategoryProducts = document.querySelector("[data-tittle-category]");
+const tittleSimilarProducts = document.querySelector("[data-tittle-similar-products]");
 
 sectionDescriptionProduct.style.display = 'none';
-sectionSimilarProduct.style.display = 'none';
+tittleSimilarProducts.style.display = 'none';
 
 /* Creación de modelo de los productos ofertados en página de inicio */
  const modelProducts = (imageUrl, name, price, id, description) => {
@@ -47,6 +47,18 @@ sectionSimilarProduct.style.display = 'none';
               divProductDescrip.removeChild(divProductDescrip.firstChild);
               break;
             }
+
+            /* Validamos que no hayan listadps de productos creados previamente */
+            let newCards = null
+
+            if (newCards != null) {
+              newCards.parentNode.removeChild(newCards);
+              newCards = null;
+            }
+
+            tittleSimilarProducts.style.display = 'block'
+            tittleCategoryProducts.style.display = 'none'
+
 
           /* Init Creación de Card para descripción del producto */
             
@@ -89,9 +101,8 @@ sectionSimilarProduct.style.display = 'none';
                         console.log (cardProduct) 
 
                         divhero.style.display = 'none';
-                        containerProducts.style.display = 'none';
-                        sectionDescriptionProduct.style.display = 'flex';
-                        sectionSimilarProduct.style.display = 'flex';
+                        sectionDescriptionProduct.style.display = 'flex';/* 
+                        sectionSimilarProduct.style.display = 'flex'; */
 
 
                     console.log (divProductDescrip)
@@ -99,17 +110,7 @@ sectionSimilarProduct.style.display = 'none';
                     divProductDescrip.appendChild(cardProduct); 
 
                   }).catch((err) => console.log(err))
-                /* Finish Creación de Card para descripción del producto */
-                /* conexión con la API para traer la lista de los productos similares ofertados en página de descripción */
-                  
-                  productsServices
-                  .listProducts()
-                  .then((data) => {
-                      data.forEach(({ imageUrl, name, price, id, description }) => {
-                      const newCards = modelProducts(imageUrl, name, price, id, description);
-                      listSimilarProduct.appendChild(newCards); 
-                      });                    
-                  }).catch((error) => alert("Ocurrió un error"));
+              
                 
         })
 /* Finish evento click en producto */
