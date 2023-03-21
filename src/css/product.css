@@ -18,7 +18,7 @@ main {
   }
 
   .product__img {
-    flex-basis: 150%;
+    flex-basis: 100%;
   }
 
   .product__img img {
@@ -35,7 +35,7 @@ main {
 
   .product__title {
     font-weight: 500;
-    font-size: 72px;
+    font-size: 52px;
     line-height: 61px;
     color: var(--color-black);
     margin-bottom: 20px;
@@ -53,7 +53,7 @@ main {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) and (max-width: 1024px) { 
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
     .product__title {
         font-size: 32px;
         line-height: 26px;
@@ -84,7 +84,7 @@ main {
     }
     
     .product__img img {
-        width: 360px;
+        width: 100%;
       }
     .product__title {
         font-size: 22px;
