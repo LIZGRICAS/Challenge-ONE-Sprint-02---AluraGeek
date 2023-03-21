@@ -152,11 +152,11 @@ iconEdit.addEventListener("click", () => {
         showConfirmButton: false,
         timer: 1500,  
       });
-    })
+    }).then(function(){
+      location.reload();
+      });
     
-}).then(function(){
-  location.reload();
-  });
+})
 
   return card;
 };
