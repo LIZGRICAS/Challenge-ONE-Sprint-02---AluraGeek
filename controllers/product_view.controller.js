@@ -1,5 +1,26 @@
 import { productsServices } from "../service/products-service.js";
 
+
+const comando = `<u>npx json-server --watch db.json</u>`
+
+/* Init Pop-up ventana emergente */
+window.onload = function() {
+  Swal.fire({
+    title: "Información importante",
+    html: `Descarga la carpeta del GitHub y ejecuta el comando ${comando} en la terminal para conectar al servidor simulado de manera local.`,
+    position: "center",
+    showConfirmButton: true,
+    confirmButtonText: "Ir a GitHub",
+    showCancelButton: true,
+    cancelButtonText: "Ok",
+    icon: 'warning',
+  }).then((result) => {
+    if (result.isConfirmed) {
+        window.location.href = "https://github.com/LIZGRICAS/Challenge-ONE-Sprint-02---AluraGeek"
+      }
+    })
+  }
+
 const divhero = document.querySelector("[data-hero]");
 const divProducts = document.querySelector("[data-products-body]");
 const sectionDescriptionProduct = document.querySelector("[data-product-description]");
