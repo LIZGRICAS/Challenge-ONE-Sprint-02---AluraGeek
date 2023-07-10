@@ -22,15 +22,13 @@ Para la validación de formularios se utilizaron las herramientas de HTML5 y val
 ---
 
 <p align="center" >
-     <img width="800" heigth="400" src="https://i.ibb.co/j4psZSk/V-deo-sin-t-tulo-Hecho-con-Clipchamp-1.gif">
-     
+     <img width="800" heigth="400" src="https://github.com/LIZGRICAS/Challenge-ONE-Sprint-02---AluraGeek/assets/102168375/8c407e24-39ec-4c2a-b1a4-b8c815021671">
 </p>
-
 
 ---
 
 <p align="center" >
-     <img width="800" heigth="400" src="https://i.ibb.co/ZTtdt4L/V-deo-sin-t-tulo-Hecho-con-Clipchamp-2.gif">
+     <img width="800" heigth="400" src="https://github.com/LIZGRICAS/Challenge-ONE-Sprint-02---AluraGeek/assets/102168375/592d0907-f6c4-4e7a-a3fc-c4ebbc3b6130)https://github.com/LIZGRICAS/Challenge-ONE-Sprint-02---AluraGeek/assets/102168375/592d0907-f6c4-4e7a-a3fc-c4ebbc3b6130">
 </p>
 ## Visita la website:
 
