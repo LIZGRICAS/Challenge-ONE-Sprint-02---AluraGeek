@@ -23,7 +23,9 @@ Para la validación de formularios se utilizaron las herramientas de HTML5 y val
 
 <p align="center" >
      <img width="800" heigth="400" src="https://i.ibb.co/j4psZSk/V-deo-sin-t-tulo-Hecho-con-Clipchamp-1.gif">
+     
 </p>
+
 
 ---
 
