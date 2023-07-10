@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^9.18.0",
+    "firebase": "^9.23.0",
     "firebaseui": "^6.0.2",
     "json-server": "^0.17.3"
   }

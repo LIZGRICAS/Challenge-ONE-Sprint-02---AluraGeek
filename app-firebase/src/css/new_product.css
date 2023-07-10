@@ -1,7 +1,6 @@
 body {
-    background-color: var(--background);
+  background: url("https://i.ibb.co/HN712tP/HD-wallpaper-starry-sky-stars-night-black.jpg");
 }
-
 
 .head__login {
     flex-basis: 20%;
@@ -9,6 +8,9 @@ body {
 
 .head__login-link {
     padding: 12px 0px;
+    background-color: var(--color-blue-50);
+    filter: drop-shadow(rgba(44, 26, 206, 0.952) 0px 10px 15px);
+    color: var(--color-white);
 }
 
 .main {
@@ -60,16 +62,19 @@ body {
     text-align: center;
     width: 100%;
     padding: 1rem;
-    background-color: var(--color-blue-100);
     color: var(--color-white);
     border-radius: 4px;
     border: solid thin transparent;
+    padding: 16px;
+    background-color: var(--color-blue-50);
+    filter: drop-shadow(rgba(44, 26, 206, 0.952) 0px 10px 15px);
   }
   
   .main__btn:hover {
-    background-color: var(--color-white);
-    color: var(--color-blue-100);
     border-color: var(--color-blue-100);
+    background-color: var(--color-black);
+    filter: drop-shadow(rgba(15, 197, 164, 0.952) 0px 10px 15px);
+    color: var(--color-blue-100);
   }
 
   @media screen and (max-width: 768px) {

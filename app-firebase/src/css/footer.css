@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: var(--color-black-00);
 }
 
 .contact {   
-    background-color: var(--color-blue-10);
+  background-color: var(--color-black);
 }
 
 .contact > .container {
@@ -37,8 +38,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #464646;
-    
+    color: var(--color-white);    
+}
+
+.contact__link:hover {
+  filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
 .contact__form {
@@ -76,22 +80,23 @@
   .form__btn {
     align-self: flex-start;
     padding: 1rem;
-    background-color: var(--color-blue-100);
+    background-color: var(--color-blue-50);
     color: var(--color-white);
     border-radius: 4px;
     border: solid thin transparent;
   }
   
   .form__btn:hover {
-    background-color: var(--color-white);
-    color: var(--color-blue-100);
-    border-color: var(--color-blue-100);
+    background-color: var(--color-blue-50);
+    border: solid thin var(--color-blue-50);
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
+    color: var(--color-white);
   }
 
   .rodape {
-    background-color: var(--color-white);
+    background-color: var(--color-black-00);
     padding: 1rem;
-    color: var(--color-black);
+    color: var(--color-white);
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;

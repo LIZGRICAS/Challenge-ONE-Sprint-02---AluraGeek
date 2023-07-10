@@ -1,11 +1,12 @@
 main {
-    background-color: var(--background);
+    background: url("https://i.ibb.co/HN712tP/HD-wallpaper-starry-sky-stars-night-black.jpg");
     padding-bottom: 50px;
 }
 
 .product__star {
     margin: 0;
     padding: 50px;
+    background-color: var(--color-black-00);
 }
 
 .product__star > .container_star {
@@ -23,6 +24,7 @@ main {
 
   .product__img img {
     width: 100%;
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
   }
 
   .product__content {
@@ -37,7 +39,7 @@ main {
     font-weight: 500;
     font-size: 52px;
     line-height: 61px;
-    color: var(--color-black);
+    color: var(--color-white);
     margin-bottom: 20px;
   }
 

@@ -1,5 +1,5 @@
 .head {
-    background-color: var(--color-white);   
+    background-color: var(--color-black);   
     padding: 32px 0px;
   }
   
@@ -35,13 +35,15 @@
   .head__login-link {
     display: block;
     padding: 0.5rem;
-    border: solid thin var(--color-blue-100);
-    color: var(--color-blue-100);
+    background-color: var(--color-blue-50);
+    color: var(--color-white);
     font-weight: 700;
   }
   
   .head__login-link:hover {
-    background-color: var(--color-blue-100);
+    background-color: var(--color-blue-50);
+    border: solid thin var(--color-blue-50);
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
     color: var(--color-white);
   }
   
